@@ -73,7 +73,7 @@ function ColorDetail({route , navigate} ){
   }
   else
   setImgColor('./assets/vs_silver.png')
-setText('Bạc')
+  setText('Bạc')
   },[color])
   return (
     <>
@@ -83,7 +83,7 @@ setText('Bạc')
             {
              
             }
-            <Image style={{width : '100%' , height:'100%'}} resizeMode='contain' source={imgcolor}></Image>
+            <Image style={{width : '100%' , height:'100%'}} resizeMode='contain' source={silver}></Image>
           </View>
           <View>
             <Text style={{fontSize : 18 , fontWeight : 500}}>Điện thoại Vsmart Joy3</Text>
@@ -101,7 +101,6 @@ setText('Bạc')
             <TouchableOpacity style ={{width : 85 , height : 80 , backgroundColor :'#000000' , marginBottom : 10}} onPress={()=>{ setColor('black')}}></TouchableOpacity>
             <TouchableOpacity style ={{width : 85 , height : 80 , backgroundColor :'#234896' , marginBottom : 10}}onPress={()=>{ setColor('blue')}} ></TouchableOpacity>
           </View>
-          <Text>{color}</Text>
         </View> 
         <View style={{}}>
           <TouchableOpacity color={'#1952E2'} onPress={()=>{navigation.navigate('ColorDetail')}} >
